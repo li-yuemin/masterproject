@@ -1,0 +1,15 @@
+Demographic simulation supplement
+
+Demographic simulations were performed using the program, ms (Hudson, 2001). Simulations assumed an ancestral population size of 10,659 and a total epoch of 40k. Theta is the mutation parameter and equal to 4N0u (see methods). The ms command lines for each population are shown below. 
+
+East Asian (CHB)
+Bottleneck for tdur generations, instantaneous recovery to NA afterwards.
+tdur=600, b=0.1:   ms 206 1000 -t Theta  -eN 0.037527 1.0 -eN 0.02345 0.1 -eN 0.0 1.0 >CHB.out
+
+European (CEU)
+Bottleneck for tdur generations, instantaneous recovery to NA afterwards.
+tdur =800, b=0.2: ms 198 1000 -t Theta  -eN 0.037527 1.0 -eN 0.01876 0.2 -eN 0.0 1.0 >CEU.out
+
+African (YRI)
+Exponential growth from initial size NA to N0, occurring tonset generations in the past.
+NA =10659, N0= 11156, tonset = 1000: ms 216 1000 -t Theta  -eG 0.02241 0 >YRI.out
